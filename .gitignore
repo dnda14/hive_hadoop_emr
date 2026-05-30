@@ -1,0 +1,75 @@
+# ==============================================================================
+# Git Ignore Configuration for Hive/EMR Big Data Project
+# ==============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env/
+.envrc
+
+# --- Credentials & Sensitive AWS Files ---
+credenciales.txt
+aws_exports.sh
+labsuser.pem
+*.pem
+.aws/
+
+# --- EMR Cluster & S3 Configurations ---
+emr_cluster_info.json
+emr_nodes_ips.json
+emr_s3_paths.json
+emr_s3_hive_paths.json
+emr_*.json
+
+# --- Datasets & Data Folders (Large Files) ---
+datos_hive/
+datos_indice/
+datos_taxi/
+datos_*/
+*.parquet
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+
+# --- Results & Outputs ---
+resultado_*
+resultado_indice*
+*.log
+*.out
+*.err
+
+# --- LaTeX & Documentation (Optional) ---
+reporte_laboratorio.tex
+instrucciones_emr.txt
+
+# --- System & IDEs ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+extraer_textos.py
+unir_novelas.py
+configurar_aws.py
+subir_archivos.sh
+subir_wikipedia_s3.py
+ver_resultados.py
+
+wikipedia_analysis.q
+ejecutar_paso_hive.py
+
+explicacion_wordcount_hive.txt
+lanzar_*
+mapper_*
+reducer_*
+subir_s3_hive.py
+subir_s3_hadoop.py
+*.q
+
+preparar_experimentos.py
+subir_s3_emr.py
