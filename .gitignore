@@ -75,3 +75,4 @@ subir_s3_emr.py
 
 benchmark_report.md
 hack_logs.py
+emr_s3_taxi_paths.json
