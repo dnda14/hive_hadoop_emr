@@ -64,12 +64,14 @@ wikipedia_analysis.q
 ejecutar_paso_hive.py
 
 explicacion_wordcount_hive.txt
-lanzar_*
-mapper_*
-reducer_*
+lanzar_job*
+mapper_prepro*
 subir_s3_hive.py
 subir_s3_hadoop.py
 *.q
 
 preparar_experimentos.py
 subir_s3_emr.py
+
+benchmark_report.md
+hack_logs.py

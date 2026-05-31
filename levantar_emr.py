@@ -275,3 +275,17 @@ if __name__ == '__main__':
         terminar_cluster()
     else:
         crear_cluster_emr()
+
+
+''' 'EbsConfiguration': {
+                        'EbsBlockDeviceConfigs': [
+                            {
+                                'VolumeSpecification': {
+                                    'VolumeType': 'gp2',
+                                    'SizeInGB': 150
+                                },
+                                'VolumesPerInstance': 1
+                            }
+                        ],
+                        'EbsOptimized': True
+                    }'''
