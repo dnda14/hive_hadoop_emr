@@ -20,8 +20,8 @@ def main():
     print("Subiendo script de Hive (hive_indice.q) a S3...")
     s3.upload_file('hive_indice.q', bucket, 'scripts/hive_indice.q')
 
-    input_path = f"s3://{bucket}/input_escala/csv_75/"
-    output_path = f"s3://{bucket}/output/hive_indice_75/"
+    input_path = f"s3://{bucket}/input_escala/csv_50/"
+    output_path = f"s3://{bucket}/output/hive_indice_50/"
     
     step = {
         'Name': 'Job 4: Hive Indice Invertido sobre CSVs',

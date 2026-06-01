@@ -20,8 +20,8 @@ def main():
     print("Subiendo scripts del a S3...")
     s3.upload_file('mapper_indice.py', bucket, 'scripts/mapper_indice.py')
     s3.upload_file('reducer_indice.py', bucket, 'scripts/reducer_indice.py')
-    input_path = f"s3://{bucket}/input_escala/csv_100/"
-    output_path = f"s3://{bucket}/output/indice_100/"
+    input_path = f"s3://{bucket}/input_escala/csv_50/"
+    output_path = f"s3://{bucket}/output/indice_50/"
     
     step = {
         'Name': 'Job 2: Índice Invertido sobre CSV',
