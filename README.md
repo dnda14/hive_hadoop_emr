@@ -6,6 +6,14 @@ El proyecto está estructurado alrededor de dos casos de uso principales:
 
 ---
 
+## Infraestructura del Clúster
+
+Todos los experimentos y procesamientos descritos en este repositorio fueron ejecutados sobre un clúster de AWS EMR compuesto por 5 máquinas en total:
+*   **1 Nodo Master:** Instancia `m4.large` (8 GB de RAM, 2 vCPUs) que actúa como orquestador y NameNode.
+*   **4 Nodos Core (Workers):** Instancias `m4.large` (8 GB de RAM, 2 vCPUs cada una) encargadas de almacenar los datos en HDFS y ejecutar las tareas de procesamiento.
+
+---
+
 ## 1. Comparativa de Rendimiento y Desarrollo: Hadoop vs. Hive
 
 La primera parte del proyecto tiene un enfoque educativo e investigativo. Su objetivo es contrastar el paradigma clásico de programación imperativa de **Hadoop MapReduce** (utilizando scripts en Python) frente a la abstracción declarativa (basada en SQL) que proporciona **Apache Hive**.
